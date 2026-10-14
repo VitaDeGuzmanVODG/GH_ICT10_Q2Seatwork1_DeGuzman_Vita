@@ -1,0 +1,256 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #101116;
+
+    /* Your cherry blossom background */
+    background-image:
+        linear-gradient(
+            rgba(10, 12, 17, 0.77),
+            rgba(10, 12, 17, 0.88)
+        ),
+        url("_%20(2).jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    color: #ffffff;
+
+    background-image: url('https://i.pinimg.com/1200x/13/3b/ab/133bab23bd4459f0b4354aefc0608034.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 45px 20px 0;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.logo {
+    width: 95px;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+
+    border-radius: 50%;
+    background: radial-gradient(circle, #a9ffff, #00bfc5);
+    border: 5px solid #ff1493;
+
+    color: #ffffff;
+    font-size: 42px;
+
+    box-shadow:
+        0 0 15px #00e5e5,
+        0 0 35px rgba(0, 229, 229, 0.55);
+}
+
+h1 {
+    font-size: clamp(27px, 5vw, 48px);
+    font-weight: 800;
+    letter-spacing: 5px;
+    color: #ff1493;
+
+    text-shadow:
+        0 0 8px rgba(255, 20, 147, 0.65);
+}
+
+.subtitle {
+    margin-top: 15px;
+    color: #a8ffff;
+    font-size: 13px;
+    letter-spacing: 4px;
+    line-height: 1.8;
+}
+
+.form-card {
+    width: 100%;
+    max-width: 675px;
+    padding: 40px 48px;
+
+    background: rgba(22, 27, 32, 0.94);
+    border: 2px solid #00dada;
+    border-top: 7px solid #ff1493;
+    border-radius: 20px;
+
+    box-shadow:
+        0 0 15px rgba(0, 218, 218, 0.16),
+        0 12px 35px rgba(0, 0, 0, 0.45);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+input {
+    width: 100%;
+    padding: 20px 23px;
+
+    background: #101116;
+    border: 2px solid #393d45;
+    border-radius: 10px;
+
+    color: #ffffff;
+    font-size: 17px;
+    outline: none;
+    transition: 0.25s;
+}
+
+input::placeholder {
+    color: #aeb7c2;
+}
+
+input:focus {
+    border-color: #00e5e5;
+    box-shadow: 0 0 12px rgba(0, 229, 229, 0.22);
+}
+
+button {
+    padding: 19px;
+    border: 2px solid #ff69b4;
+    border-radius: 10px;
+
+    background: linear-gradient(100deg, #d90069, #ff1493);
+    color: #ffffff;
+
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 4px;
+
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+button:hover {
+    background: #00bfc5;
+    border-color: #a8ffff;
+    color: #101116;
+    box-shadow: 0 0 20px rgba(0, 229, 229, 0.4);
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.result-card {
+    width: 100%;
+    max-width: 675px;
+    min-height: 105px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    margin-top: 35px;
+    padding: 25px;
+
+    background: rgba(14, 29, 32, 0.94);
+    border-left: 6px solid #00e5e5;
+    border-radius: 12px;
+
+    color: #a8ffff;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.7;
+
+    overflow-wrap: anywhere;
+
+    box-shadow: 0 0 18px rgba(0, 229, 229, 0.12);
+}
+
+footer {
+    width: calc(100% + 40px);
+    margin-top: auto;
+    padding: 25px 15px;
+
+    background: rgba(12, 14, 18, 0.96);
+    border-top: 4px solid #ff1493;
+
+    text-align: center;
+    color: #b6b6c0;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+footer span {
+    color: #ff69b4;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .page {
+        padding: 35px 18px 0;
+    }
+
+    .header {
+        margin-bottom: 30px;
+    }
+
+    .logo {
+        width: 75px;
+        height: 75px;
+        font-size: 34px;
+    }
+
+    h1 {
+        letter-spacing: 2px;
+    }
+
+    .subtitle {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .form-card {
+        padding: 28px 20px;
+    }
+
+    input {
+        padding: 16px;
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 17px;
+    }
+
+    .result-card {
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    footer {
+        font-size: 11px;
+    }
+}

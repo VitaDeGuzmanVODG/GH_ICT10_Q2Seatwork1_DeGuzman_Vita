@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <title>Monarch Club Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page">
+        <header class="header"></header>
+            <h1>DANCE CLUB CHECKER</h1>
+            
+        </header>
+
+        <section class="form-card">
+            <form onsubmit="return false;">
+                <input
+                    type="text"
+                    id="first_name"
+                    placeholder="Enter first name"
+                    autocomplete="given-name"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="last_name"
+                    placeholder="Enter last name"
+                    autocomplete="family-name"
+                    required
+
+                >
+
+                <button type="button" py-click="check_member">ENTER</button>
+            </form>
+        </sections>
+
+        <section id="result" class="result-card" aria-live="polite">
+            Your membership result will appear here.
+        </section>
+
+        <footer>
+            © 2026 <span>DANCE CLUB</span> · Seatwork 2 · 2nd Quarter
+        </footer>
+    </main>
+
+    <py-script src="main.py"></py-script>
+</body>
+</html>
